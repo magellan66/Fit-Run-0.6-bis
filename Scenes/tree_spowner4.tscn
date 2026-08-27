@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://xd4d51yavaie"]
+
+[ext_resource type="Script" uid="uid://duu30wbk0g1o6" path="res://Script/Tree-spowner.gd" id="1_yn5b5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qp2me"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uur74"]
+
+[node name="Tree-spowner" type="Node3D" unique_id=338199898]
+script = ExtResource("1_yn5b5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=145902046]
+transform = Transform3D(0.5, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 1.5, 0)
+mesh = SubResource("BoxMesh_qp2me")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1469119657]
+transform = Transform3D(0.5, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_uur74")
